@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2A-uj-N6y">
+                                <rect key="frame" x="0.0" y="54" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="OJo-T9-HzY"/>
+                                    <constraint firstAttribute="width" constant="375" id="i8R-9p-rOi"/>
+                                    <constraint firstAttribute="width" secondItem="X2A-uj-N6y" secondAttribute="height" multiplier="125:72" id="leE-8c-Bxf"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0X-L6-NxH">
+                                <rect key="frame" x="0.0" y="302" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5sb-sR-ii8"/>
+                                    <constraint firstAttribute="width" constant="375" id="nB4-MB-Lky"/>
+                                    <constraint firstAttribute="width" secondItem="b0X-L6-NxH" secondAttribute="height" multiplier="125:7" id="tIz-8P-vme"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b0X-L6-NxH" secondAttribute="bottom" constant="344" id="NOU-6J-sfu"/>
+                            <constraint firstAttribute="trailing" secondItem="b0X-L6-NxH" secondAttribute="trailing" id="PL3-FE-24H"/>
+                            <constraint firstItem="X2A-uj-N6y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="ZeH-fS-lE2"/>
+                            <constraint firstAttribute="trailing" secondItem="X2A-uj-N6y" secondAttribute="trailing" id="h0F-0c-HNx"/>
+                            <constraint firstItem="b0X-L6-NxH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jfJ-C3-2vv"/>
+                            <constraint firstItem="b0X-L6-NxH" firstAttribute="top" secondItem="X2A-uj-N6y" secondAttribute="bottom" constant="32" id="riH-YU-eFe"/>
+                            <constraint firstItem="X2A-uj-N6y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sCx-6c-w7m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHasil" destination="b0X-L6-NxH" id="RfZ-Be-UjJ"/>
+                        <outlet property="pictColor" destination="X2A-uj-N6y" id="M6L-gG-Oyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
